@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+.navbar{
+    background-color: #24242A;
+    position: sticky;
+    top: 0;
+    z-index: 99999 !important;
+}
+li,button,a{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+.title {
+    width: 80px;
+    border: 0;
+    background: transparent;
+}
+.footer{ 
+	background: -webkit-linear-gradient(to right, #434343, #000000); 
+	background: linear-gradient(to right,#000000, #434343, #000000); 
+	margin-top: -30px;
+	width:100%;
+	color:#fff;
+	right:0;
+	left:0;
+	height:44px;
+	padding:6px;
+	text-align: center;
+	font-size: 26px;
+}
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    height: 10px;
+}
+.nav-links{
+    list-style: none;
+}
+.nav-links li{
+    display: inline-block;
+    margin: 0 20px;
+}
+.social{
+    cursor:pointer;
+}
+.social:hover{
+    color: purple;
+}
+.nav-links li a{
+    transition: all 0.3s ease 0s;
+}
+.nav-links li a:hover{
+    color: #0088a9;
+}
+button{
+    padding: 9px 25px;
+    background-color: rgb(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color: rgba(0,136,169,0.8);
+}
+.social-links{
+    display: inline-block;
+    height: 40px;
+    width: 0px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+h1{
+    font-size: 32px;
+    letter-spacing: 0.3px;
+    font-family: "klarna Text";
+    text-align: center;
+    margin-top: 50px;
+}
+.cards{
+    width:17cm;
+    height:5cm;
+    border-radius: 16px;
+    border: #fff 2px solid;
+    box-shadow: 0 2px 9px rgb(0 0 0 / 15%);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:100px;
+}
+img{
+    padding: 20px;
+}
+.text{
+    display: flex;
+    /* justify-content: center; */
+   align-items: center;
+}
+.text p{
+    font-size: 10px;
+    color: #000;
+
+}
+.black{
+    padding: 9px 25px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.black:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}

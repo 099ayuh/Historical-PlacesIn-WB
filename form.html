@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 9</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-image: url('https://img.freepik.com/free-psd/laptop-smartphone-digital-marketing-background_23-2148346689.jpg?w=2000');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .form {
+            background-color: rgba(16, 2, 38, 0.929);
+            border-radius: 20px;
+            width: fit-content;
+            height: fit-content;
+            color: whitesmoke;
+            font-family: cursive;
+            padding: 17px;
+            margin: auto;
+            opacity: 0.98;
+        }
+
+        input[type="button"] {
+            background-color: #4BB543;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            width: 500px;
+            margin: 6px 13px;
+            cursor: pointer;
+            font-family: cursive;
+            font-size: larger;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        textarea {
+            background-color: whitesmoke;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            width: 500px;
+            margin: 6px;
+            outline: none;
+        }
+        select{
+            padding: 6px;
+            width: 150px;
+            margin-left: 10px;
+            border: none;
+            text-align: center;
+            font-size: 16px;
+            border-radius: 6px;
+        }
+        input[type="button"]:hover{
+            background-color: #f2d40e;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar" id="Nav">
+        <header>
+          <img class="title" src="https://png.pngtree.com/png-clipart/20190118/ourmid/pngtree-historic-buildings-places-of-interest-tourist-attractions-tourist-attraction-png-image_455447.jpg">
+          <nav>
+            <ul class="nav-links">
+              <li><a href="loading-page.html">Home</a></li>
+              <li><a href="https://www.shutterstock.com/search/historical+place">Gallary</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="https://instagram.com/me_bonglog?igshid=YmMyMTA2M2Y=">About me</a></li>
+              <li><a href="https://travel.usnews.com/rankings/worlds-best-vacations/">Popular Destinations</a></li>
+              <a>
+                <li class="fab fa-facebook-f social"></li>
+              </a>
+              <a>
+                <li class="fab fa-twitter social"></li>
+              </a>
+              <a>
+                <li class="fab fa-instagram social"></li>
+              </a>
+              <a>
+                <li class="fab fa-linkedin-in social"></li>
+              </a>
+            </ul>
+          </nav>
+          <a class="cta" href="index.html"><button>Home</button></a>
+          
+        </header>
+      </div>
+    <div id="show" style="min-width: 582px; display: none;background-color: #4BB543; border-radius: 5px; text-align: center; font-family: cursive;">
+        <h1 style="padding: 10px;">SuccessFully Submitted!!!</h1>
+    </div>
+    <div class="form">
+        <h1 align="center" style="text-shadow: 6px -1px 3px rebeccapurple"><b><u>Employee Registration Form</u></b></h1>
+        <form action="#">
+            First name <br><input type="text" name="myname"> <br>
+            Middle name <br><input type="text" name="myname"> <br>
+            Last name <br><input type="text" name="myname"> <br>
+            <br>
+            <label for="Course">Course : </label>
+            <select name="Course" id="Course">
+                <option value="Course">Course</option>
+                <option value="BCA">BCA</option>
+                <option value="BBA">BBA</option>
+                <option value="B.Tech">B.Tech</option>
+                <option value="MBA">MBA</option>
+                <option value="MCA">MCA</option>
+                <option value="M.Tech">M.Tech</option>
+                <option value="Other">Other</option>
+            </select>
+            <br><br>
+            Gender : <br>
+            <input type="radio" name="MyRadio" id=""> Male
+            <input type="radio" name="MyRadio" id=""> Female
+            <input type="radio" name="MyRadio" id=""> Other
+            <br><br>
+            Phone : <br>
+            <input type="text" name="MyPhone" placeholder="Country Code" value="+91 " size="20"> <br></br>
+            Current Address : <br>
+            <textarea placeholder="Current Address" name="MyArea" cols="70" rows="10" style="resize: none;"></textarea>
+            <br><br>
+            Email <br>
+            <input type="email"> <br><br>
+            Password <br>
+            <input type="password" id="myInput"> <br><input type="checkbox" onclick="myFunction()"><span
+                id="check"></span><br><br>
+            Re-type Password <br>
+            <input type="password"> <br><br>
+            <input type="button" onclick="showSuccess()" value="Submit">
+        </form>
+    </div>
+    <script>
+        document.getElementById('check').innerText = "Show Password";
+        function showSuccess() {
+            document.getElementById('show').style.display = "block";
+        }
+        function myFunction() {
+            var x = document.getElementById("myInput");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+:root {
+    --toogle-color: #d27c42;
+}
+/* .dark{
+    background-color: rgba(2, 2, 2, 0.95);
+    color: #e6e6e6;
+    
+} */
+
+.nav-head {
+    background-color: rgba(16, 16, 16, 0.144);
+    color: whitesmoke;    
+}
+#checkbox {
+    display: none;
+}
+.toggler {
+    display: block;
+    width: 62px;
+    height: 32px;
+    border: 3px solid var(--toogle-color);
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+    margin:3px 5px;
+}
+.ball,
+.sun,
+.moon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.ball {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: var(--toogle-color);/*#4672fe;*/
+    border-radius: 50%;
+    left: 1px;
+    z-index: 10;
+    transition: transform .5s ease-in-out;
+}
+
+.sun{
+    left: 5px;
+}
+.moon {
+    right: 5px;
+}
+#checkbox:checked + .ball {
+    transform: translate(29px, -50%);
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cbf3737f16.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 95vh;
+            opacity: 0.5;
+        }
+
+        h1 {
+            font-family: 'Roboto Mono', monospace;
+            text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 1em rgb(62, 62, 62), 0 0 0.2em rgb(218, 218, 218);
+        }
+
+        .loading-img {
+            position: relative;
+            background-color: rgba(87, 49, 177, 0.829);
+        }
+
+        body {
+            overflow-y: hidden;
+        }
+
+        #btn-read {
+            position: absolute;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 38%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar" id="Nav">
+        <header>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="loading-page.html">Home</a></li>
+                    <li><a href="https://www.shutterstock.com/search/historical+place">Gallary</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="https://instagram.com/me_bonglog?igshid=YmMyMTA2M2Y=">About me</a></li>
+                    <li><a href="https://travel.usnews.com/rankings/worlds-best-vacations/">Popular Destinations</a></li>
+                    <a>
+                        <li class="fab fa-facebook-f social"></li>
+                    </a>
+                    <a>
+                        <li class="fab fa-twitter social"></li>
+                    </a>
+                    <a>
+                        <li class="fab fa-instagram social"></li>
+                    </a>
+                    <a>
+                        <li class="fab fa-linkedin-in social"></li>
+                    </a>
+                </ul>
+            </nav>
+            <a class="cta" href="form.html"><button>Contact</button></a>
+           
+        </header>
+    </div>
+    <div class="loading-img">
+        <img src="./image/pexels-kirandeep-singh-walia-10596860.jpg" alt="">
+        <div id="btn-read">
+            <h1>HISTORICAL PLACES</h1>
+            <br>
+            <center><button><a href="index.html">Read more</a></button></center>
+        </div>
+    </div>
+</body>
+
+</html>

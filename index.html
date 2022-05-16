@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="https://png.pngtree.com/png-clipart/20190118/ourmid/pngtree-historic-buildings-places-of-interest-tourist-attractions-tourist-attraction-png-image_455447.jpg" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="style.css" id="theme-link" />
+  <link rel="stylesheet" href="Dark-Light_toggle.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <!-- Importing fonts from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet" />
+  <title>Navbar</title>
+</head>
+
+<body>
+  <div class="navbar" id="Nav">
+    <header>
+      <img class="title" src="https://png.pngtree.com/png-clipart/20190118/ourmid/pngtree-historic-buildings-places-of-interest-tourist-attractions-tourist-attraction-png-image_455447.jpg">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="loading-page.html">Home</a></li>
+          <li><a href="https://www.shutterstock.com/search/historical+place">Gallary</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="https://instagram.com/me_bonglog?igshid=YmMyMTA2M2Y=">About me</a></li>
+          <li><a href="https://travel.usnews.com/rankings/worlds-best-vacations/">Popular Destinations</a></li>
+          <a>
+            <li class="fab fa-facebook-f social"></li>
+          </a>
+          <a>
+            <li class="fab fa-twitter social"></li>
+          </a>
+          <a>
+            <li class="fab fa-instagram social"></li>
+          </a>
+          <a>
+            <li class="fab fa-linkedin-in social"></li>
+          </a>
+        </ul>
+      </nav>
+      <a class="cta" href="form.html"><button>Contact</button></a>
+      <a>
+        <label for="checkbox" class="toggler">
+          <input type="checkbox" class="btn-toggle" id="checkbox">
+          <span class="ball"></span>
+          <i class="fa-solid fa-sun sun"></i>
+          <i class="fa-solid fa-moon moon"></i>
+        </label>
+      </a>
+    </header>
+  </div>
+  <div>
+    <h1>HISTORICAL PLACES</h1>
+    <div class="cards">
+      <div class="text">
+        <img src="./image/belur.webp" alt="belur-math" />
+        <h2>Belur Math</h2>
+        <pre>       </pre>
+        <a href="belur.html"><button
+            class="black">Explore</button></a>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="text">
+        <img src="./image/japanese.webp" alt="Japanese Peace Pagoda " />
+        <h2>Japanese Peace</h2>
+        <pre>    </pre>
+        <a href="Japanese.html"><button
+            class="black">Explore</button></a>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="text">
+        <img src="./image/kalighat.webp" alt="kalighat" />
+        <h2>kalighat Temple</h2>
+        <pre>    </pre>
+        <a href="kalighat.html"><button
+            class="black">Explore</button></a>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="text">
+        <img src="./image/dakshineswar.webp" alt="Dakshineswar" />
+        <h2>Dakshineswar</h2>
+        <pre>    </pre>
+        <a href="Dakshineswar.html"><button
+            class="black">Explore</button></a>
+      </div>
+    </div>
+  </div><br><br><br>
+  <div class="footer">
+		<span class="me">Developed By:  Souvik Bera</span>
+	</div>
+  <script src="https://kit.fontawesome.com/cbf3737f16.js" crossorigin="anonymous"></script>
+  <script>
+    // function myFunction() {
+    //   var element = document.body;
+    //   element.classList.toggle("dark");
+
+    // }
+    const btn = document.querySelector(".btn-toggle");
+    // Select the stylesheet <link>
+    const theme = document.querySelector("#theme-link");
+
+    // Listen for a click on the button
+    btn.addEventListener("click", function () {
+      // If the current URL contains "ligh-theme.css"
+      if (theme.getAttribute("href") == "style.css") {
+        // ... then switch it to "dark-theme.css"
+        theme.href = "dark-nide.css";
+        // Otherwise...
+      } else {
+        // ... switch it to "style.css"
+        theme.href = "style.css";
+      }
+    });
+  </script>
+
+</body>
+
+</html>
